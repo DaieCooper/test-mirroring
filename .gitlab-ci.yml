@@ -3,6 +3,10 @@ stages:
 
 Test:
   stage: test
-  image: busybox:latest
+  tags:
+    - k8s
+  image: hub.adsw.io/library/alpine:3.18-x64
   script: 
     - echo "hello"
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "push"
