@@ -1,0 +1,8 @@
+stages:
+  - test
+
+Test:
+  stage: test
+  image: busybox:latest
+  script: 
+    - echo "hello"
