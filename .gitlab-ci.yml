@@ -9,4 +9,4 @@ Test:
   script: 
     - echo "hello"
   rules:
-    - if: $CI_PIPELINE_SOURCE == "api"
+    - if: $CI_PIPELINE_SOURCE == "trigger"
